@@ -38,7 +38,7 @@ class SignUp extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-      const profile_uuid = uuid.replace(/-/g, "").toUpperCase();
+      const profile_uuid = uuid().replace(/-/g, "").toUpperCase();
       this.setState({did:profile_uuid});
       if (
         this.state.name &&

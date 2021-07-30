@@ -56,15 +56,15 @@ class EvaluateIpfs extends Component {
 
             //console.log("DATA AAYO HOLA HAI")
             // convert Buffer back to string
-            /*let storage = {};
+            let storage = {};
             // console.log(JSON.parse(data));
             storage = JSON.parse(localStorage.getItem("ipfsDetails"));
             if(!storage){
                 storage = {};
             }
             storage[this.props.addressObj[index].index] = JSON.parse(data);
-            // console.log(storage)*/
-            localStorage.setItem("ipfsDetails", JSON.stringify(data));
+            // console.log(storage)
+            localStorage.setItem("ipfsDetails", JSON.stringify(storage));
 
 
             // console.log(JSON.parse(localStorage.getItem('ipfsDetails')))
