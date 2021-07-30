@@ -1,0 +1,107 @@
+
+
+.main-header {
+    background-color: #566A6E;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    padding: 4vh;
+}
+.issuer {
+    display: flex;
+    align-items: center;
+    
+}
+.issuer_title {
+  position: absolute;
+  width: 25vw;
+  text-align: center;
+  font-size: 3rem;
+}
+.issuer_logo {
+    height: 12vh;
+    width: 12vh;
+    background-image: url('./img/issuer_logo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 6vh;
+    margin-right: 3vh;
+}
+/************************************************/
+.user {/********user inside dashboard bar*********/
+    margin-right: 1vw;
+    text-transform:capitalize;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.user:hover {
+    cursor: pointer;
+}
+.user:hover .fa-caret-down {
+    transform: translate(0px,-2px);
+}
+.user:active .fa-caret-down {
+    transform: translate(0px,1px);
+}
+.fa-caret-down {
+    margin-left: .2vw;
+}
+.fa-user {
+    margin-right: .2vw;
+}
+/***************************************/
+.main-header-btn {
+    display: flex;
+    align-items: center;
+}
+.dispflex {
+    display: flex;
+    align-items: center;
+}
+
+.search-issuer {
+    margin-right: 20px;
+    line-height: 28px;
+    border-radius: 2px;
+    border: 1px solid #691008;
+    width: 500px;
+    padding-left: 15px;
+}
+
+.search-issuer::placeholder {
+    font-weight: 100;
+}
+
+
+.issuer-search-btn { /******log in button itself*******/
+  padding: 10px 60px;
+  font-family: 'karla',sans-serif;
+  border: none;
+  border-radius: .2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: #691008;
+  outline: none;
+  font-weight: bold;
+  color: #fff;
+}
+.issuer-search-btn:hover {
+  cursor: pointer;
+  background-color: #691008;
+  color: #fff;
+  transform: translate(0px,-1px);
+}
+
+.issuer-thead th {
+    border-bottom: 1px solid #691008 !important;
+    border-top: none;
+}
+
+.issuer-container button {
+    font-family: 'karla',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,0 +1,603 @@
+html {
+  font-size: 16px;
+  font-family: 'russo one',sans-serif;
+}
+.App{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('app_background.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background {
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+  opacity:0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.homePageHeader {
+    font-size: 4rem;
+    font-family: 'open-sans' sans-serif;
+    font-weight: 700;
+    position: absolute;
+    left: 25vw;
+    top: 17vh;
+    color: #fff;
+    font-family:sans-serif;
+}
+
+.btn-container {
+    width: 30vw;
+    position: absolute;
+    top: 32vh;
+    left: 34vw;
+    display: flex;
+    /*background-color: royalblue;*/
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+/* login button */
+
+.login_btn {
+  height: 100px;
+  width: 200px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.login_btn div {
+  cursor: pointer;
+  padding: 20px 60px; background-color: #00CA4E; font-size:1.2rem;
+}
+
+/* wallet button */ 
+.wallet_btn {
+  height: 100px; width: 200px;  display: flex; align-items: center; justify-content: center;
+}
+
+.wallet_btn div {
+  cursor: pointer;
+  padding: 20px 25px 20px 45px; background-color: #24a0ed; font-size:1.2rem; width: 250px;
+}
+
+.main_btn {
+    color: #fff !important;
+    background: #60a3bc;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.3s ease 0s;
+    }
+.main_btn:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+    }
+
+.loginBox {
+    width: 30vw;
+    position: absolute;
+    top: 16vh;
+    left: 30vw;
+    display: none;
+    
+}
+
+/* close button */
+
+.open-close-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 0.1em solid #f4d6d7;
+  font-size: 3em;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  cursor: pointer;
+}
+.open-close-button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #f4d6d7;
+  width: 80%;
+  height: 6%;
+  left: 10%;
+  top: 47%;
+}
+.open-close-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #f4d6d7;
+  width: 6%;
+  height: 80%;
+  left: 47%;
+  top: 10%;
+}
+.open-close-button.open {
+  background-color: #f4d6d7;
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.open-close-button.open:after {
+  background-color: #C9353B;
+}
+.open-close-button.open:before {
+  background-color: #C9353B;
+}
+
+    /* remaining */
+
+.log-in {/*******individual log in button**********/
+  color:#333;
+}
+.create-account {/*******individual create account button********/
+  color: #333;
+  background-color: #eee;
+}
+/**********************************************************/
+/*************getting into forms*****************/
+/*************************************************************/
+
+.log-in-tab {/******white container for log-in pop up********/
+  
+  width: 40vw;
+  position: absolute;
+  top: 20vh;
+  left: 29.5vw;
+  background-color: #fff;
+  padding: 1rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.log-in-tab .cut-log-in-tab {/*****referring to the cut button specifically*****/
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color:transparent;
+  position: relative;
+  left: 39.3vw;
+  top: -1.2vh;
+  
+}
+
+.login-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #f12711;
+}
+
+form {/******general styles for form itself**********/
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+  justify-content: flex-start;
+  font-family: 'karla';
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+}
+.form-block {/****common class for username and password div containers*****/
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.username-block {/*****div container of username input field****/
+  margin-top: 3vh;
+}
+.password-block {/****div container of password input field*****/
+  
+}
+#username {/**input field for username**/
+  width: 98%;
+  margin-top: 2vh;
+}
+#password {/***input field for password*****/
+  width: 98%;
+  margin-top: 2vh;
+}
+label {/****general styles for label******/
+  margin-bottom: 8px;
+  color: #333;
+}
+.signup_input {/********general styles for input********/
+  outline: none;
+  font-family: 'karla',sans-serif;
+  border: solid 1px #ccc;
+  font-size: 1rem;
+  border-radius: .2rem;
+  padding: .4rem;
+  font-weight: bold;
+  color: #555;
+}
+.signup_input::-webkit-input-placeholder {
+  font-family: 'lato',Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #aaa;
+}
+.signup_input:focus {
+ border: solid 1px #1a53ff;
+}
+
+
+.signup_input:focus::-webkit-input-placeholder { /**remove the placeholder on focus*******/
+  color:transparent;
+  
+}
+
+.submit-btn {/****div container of log in button***/
+  align-self: center;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+.forgot-password {/***div container of forgot password link***/
+  margin-top: -1vh;
+  align-self: center;
+  margin-bottom: 2vh;
+}
+.forgot-password-link {/****forgot password link itself******/
+  text-decoration: none;
+  text-transform: lowercase;
+}
+.form-submit { /******log in button itself*******/
+  padding: 15px 80px;
+  font-family: 'karla',sans-serif;
+  border: none;
+  border-radius: .2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background:radial-gradient( circle farthest-corner at -0.2% 99.7%,  rgba(190,53,145,1) 0%, #1D5590 165.2% );
+  outline: none;
+  font-weight: bold;
+  color: #fff;
+}
+.form-submit:hover {
+  cursor: pointer;
+  background-color: #00b359;
+  color: #fff;
+  transform: translate(0px,-1px);
+}
+.form-btn-disabled {
+  cursor: not-allowed !important;
+  opacity: 0.5;
+}
+
+.log-in-submit:active {
+  /*border: solid 1px #fff;*/
+  background-color: #00cc66;
+  transform: translate(0px,1px);
+}
+
+/*******************************************************************/
+/****************create account block*******************************/
+/*********************************************************************/
+
+.create-account-tab { /*******white container of create-account*******/
+  background-color: #fff;
+  width: 40vw;
+  position: relative;
+  top: 10vh;
+  padding: 1rem;
+  
+}
+.create-crypto-tab { /*******white container of create-account*******/
+  background-color: #fff;
+  width: 40vw;
+  margin-top: 68px;
+  padding: 1rem;
+  margin-left: -145px;
+  
+}
+.create-account-block { /*******common class for each block inside form*/
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.create-account-submit {/***div container of sign up button********/
+  align-self: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.create-account-submit-btn {/*****signup button iteslf*******/
+  padding: .8rem;
+  font-family: 'karla',sans-serif;
+  border: none;
+  /*border: solid 1px #fff;*/
+  border-radius: .2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color:#00ace6;
+  outline: none;
+  /*transition: border;
+  transition-duration: .2s;*/
+  font-weight: bold;
+  color: #fff;
+}
+.create-account-submit-btn:hover {
+  cursor: pointer;
+  /*border: solid 1px #0099cc;*/
+  background-color: #0099cc;
+  color: #fff;
+  transform: translate(0px,-1px);
+}
+.create-account-submit-btn:active {
+  /*border: solid 1px #fff;*/
+  background-color: #00ace6;
+  transform: translate(0px,1px);
+}
+.create_username {/*****input field for username***/
+  margin-top: 3vh;
+}
+.cut-create-account-tab {/****cut icon for create-account-tab********/
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  left: 39.4vw;
+  top: -1vh;
+}
+/*****************required field in create-wallet*********/
+.small-create-wallet {
+  margin-top: -1.5vh;
+  display: none;
+}
+/***************************************************************************/
+/*********************verification tab*********************/
+/**********************************************************************/
+
+.verify-tab {
+  width: 40vw;
+  position: absolute;
+  top: 20vh;
+  left: 30vw;
+  padding: 0;
+  background-color: #aaa;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.fa-arrow-left {
+  position: absolute;
+  left: 1vw;
+}
+.fa-arrow-left:hover {
+  transform: translate(1px,0px);
+  cursor: pointer;
+}
+.fa-arrow-left:active {
+  transform: translate(-1px,0px);
+}
+.verify-tab-header {
+  font-family: 'lato','karla';
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: .8rem;
+  background-color: #1a53ff;
+  color: #fff;
+  width: ;
+}
+.verify-tab-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2vw;
+}
+.div-verify {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.div-verify-phoneNo {
+  
+}
+small {
+  display: block;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: .8rem;
+  margin-bottom: 6vh;
+  margin-top: 1vh;
+}
+.submit-verification {
+  align-self: center;
+  border: none;
+  background-color: #00cc33;
+  outline: none;
+  padding: 1.5vh;
+  border-radius: .3rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.submit-verification:hover {
+  transform: translate(0px,-1px);
+  cursor: pointer;
+}
+.submit-verification:active {
+  transform: translate(0px,1px);
+}
+.verification-input {
+  width: 12vw;
+  
+}
+.flex-needed1 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.verify-btn {
+  padding: 0;
+  font-size: 1.5rem;
+  color: #ff8000;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.verify-btn:hover {
+  transform:translate(0px,-1px);
+  cursor: pointer;
+}
+.verify-btn:active {
+  transform: translate(0px,1px);
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: darkred;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+
+.app-upload-btn {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.app-upload-btn:hover {
+  background: radial-gradient( circle farthest-corner at -0.2% 99.7%,  rgba(190,53,145,1) 0%, #1D5590 165.2% );
+  color: white;
+  border: 1px solid white;
+}
+
+.app-or {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.app-line-left {
+  width: 40%;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  top: 8px;
+  left: 35px;
+}
+
+.app-line-right {
+  width: 40%;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  top: 8px;
+  right: 35px;
+}
+
+.login-alerts {
+  top: 14vh;
+  width: 40%;
+  position: absolute;
+  left: 403px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
+
+/*
+
+
+#00cc66
+#00e639
+#00cc33*/
+/**********adding media queries for verify tab***************/
+@media only screen and (max-width: 900px) {
+  .verify-tab {
+      width: 60vw;
+      left: 20vw;
+  }
+  .fa-arrow-left {
+     
+  }
+  .verify-tab-label {
+      display: none;
+  }
+  .verification-input {
+      width: 16vw;
+  }
+ 
+}
+@media only screen and (max-width: 500px) {
+  .verification-input {
+      width: 20vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .verification-input {
+      width: 25vw;
+  }
+}
+
