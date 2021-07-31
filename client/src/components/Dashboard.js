@@ -479,7 +479,7 @@ class Dashboard extends Component {
                 <div className="dash-container">
                 <div className="dash-nav">
                     <div>
-                        <h1 className="dash-title">Self Sovereign Identity</h1>
+                        <h1 className="dash-title">Contractor Home</h1>
                     </div>
                     <div>
                         <button onClick={this.handleLogout} className="dash-logout-btn">Logout</button>
@@ -604,3 +604,4 @@ class Dashboard extends Component {
 }
 
 export default Dashboard;
+
