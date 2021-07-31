@@ -279,16 +279,9 @@ class Verifier extends Component {
                         <div className="main-header">
                             <div className="verifier">
                                 <div className="verifier_logo" />
-                                <div className="verifier-title"><h1 style={{ fontSize: '3rem' }}>Verifier</h1></div>
+                                <div className="verifier-title"><h1 style={{ fontSize: '3rem' }}>USER</h1></div>
                             </div>
-                            <div className="make-request-div">
-                                <div style={{ width: '500px' }}>
-                                    <label style={{ fontSize: '20px' }}>Request new document</label>
-                                    <input onChange={this.handleKeyChange} className="publicKeyInput form-control" style={{ marginBottom: '5px' }} type="text" placeholder="Enter public key" />
-                                    <input onChange={this.handleDocChange} className="publicKeyInput form-control" type="text" placeholder="Enter Document Name" />
-                                </div>
-                                <button onClick={this.handleRequest} className="verifer-req-btn">Make Request</button>
-                            </div>
+                            
                         </div>
                     </div>
 
