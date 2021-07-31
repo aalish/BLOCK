@@ -57,13 +57,14 @@ class EvaluateIpfs extends Component {
                                 </button>
                             </div>
                             <div className="modal-body">
-                                <p>Name: {el.name}</p>
-                                <p>Phone: {el.phone}</p>
-                                <p>Email: {el.email}</p>
-                                <p>User DID: {el.user_did}</p>
-                                <p>Document DID: {el.doc_did}</p>
-                                <p>Signature: {el.signature}</p>
-                                <p>Status: {(el.review) ? 'Reviewed' : 'Not Reviewed'}</p>
+                                <p><b>Name:</b> {el.name}</p>
+                                <p><b>Phone:</b> {el.phone}</p>
+                                <p><b>Email:</b> {el.email}</p>
+                                <p><b>User DID: </b>{el.user_did}</p>
+                                <p><b>Document DID: </b> {el.doc_did}</p>
+                                
+                                <p><center>PHOTO</center></p>
+                                
 
                                 <img className="img-responsive" height="600px" width="400px" src={el.image} alt="" />
                             </div>
