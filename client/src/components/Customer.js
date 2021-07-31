@@ -62,8 +62,7 @@ class EvaluateIpfs extends Component {
                                 <p>Email: {el.email}</p>
                                 <p>User DID: {el.user_did}</p>
                                 <p>Document DID: {el.doc_did}</p>
-                                <p>Signature: {el.signature}</p>
-                                <p>Status: {(el.review) ? 'Reviewed' : 'Not Reviewed'}</p>
+
 
                                 <img className="img-responsive" height="600px" width="400px" src={el.image} alt="" />
                             </div>
