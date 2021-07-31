@@ -1,7 +1,7 @@
 
 
 .verifier-header .main-header {
-    background: radial-gradient( circle farthest-corner at -0.2% 80.7%, #594EE8 11%, #1A5ECB 118.2% );
+    background:radial-gradient( circle farthest-corner at -0.2% 80.7%, #343a40 11%, #dc3545 118.2% );
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -17,12 +17,12 @@
     
 }
 .verifier_logo {
-    height: 12vh;
-    width: 12vh;
-    background-image: url('./img/verifier-logo.png');
+    height: 25vh;
+    width: 40vh;
+    background-image: url('./img/logo_verifier.png');
     background-size: cover;
     background-position: center;
-    border-radius: 6vh;
+    border-radius: 2vh;
     margin-right: 3vh;
 }
 /************************************************/
@@ -64,8 +64,9 @@
 
 .make-request-div {
     width: 600px;
+    border-radius: 4vh;
     align-items: center;
-    background: white;
+    background: radial-gradient( circle farthest-corner at -0.2% 80.7%, #f8f9fa4d 11%, #35dc872e 118.2% );
     padding:15px;
     margin-right: 80px;
     
@@ -100,7 +101,7 @@
 }
 .recent-lists {
     margin: 30px 100px 0px 100px;
-    background-color:white;
+    background:radial-gradient( circle farthest-corner at -0.2% 80.7%, #393a4085 11%, #dc3545 118.2% );
     padding: 20px;
     box-shadow: 0px 12px 27px -13px rgba(0,0,0,0.33);
    
@@ -108,7 +109,7 @@
 .history {
    
     margin: 0px 100px 30px 100px;
-    background-color:white;
+    background: radial-gradient( circle farthest-corner at -0.2% 80.7%, #393a4085 11%, #dc3545 118.2% );
     padding: 20px;
     box-shadow: 0px 12px 27px -13px rgba(0,0,0,0.33);
 }
@@ -130,7 +131,7 @@
   border-radius: .2rem;
   text-transform: uppercase;
   font-size: 1rem;
-  background: radial-gradient( circle farthest-corner at -0.2% 80.7%, #594EE8 11%, #1A5ECB 118.2% );
+  background:  radial-gradient( circle farthest-corner at -0.2% 80.7%, #00ffad2b 11%, #49323c 118.2% );
   outline: none;
   font-weight: bold;
   color: #fff;
@@ -138,7 +139,7 @@
 }
 .verifer-req-btn:hover {
   cursor: pointer;
-  background-color: #00b359;
+  background-color: #fa073a;
   color: #fff;
   transform: translate(0px,-1px);
 }
@@ -150,14 +151,14 @@
   border-radius: .2rem;
   text-transform: uppercase;
   font-size: 1rem;
-  background: radial-gradient( circle farthest-corner at -0.2% 80.7%, #594EE8 11%, #1A5ECB 118.2% );
+  background: radial-gradient( circle farthest-corner at -0.2% 80.7%, #00ffad2b 11%, #49323c 118.2% );
   outline: none;
   font-weight: bold;
   color: #fff;
 }
 .verifer-logout-btn:hover {
   cursor: pointer;
-  background-color: #00b359;
+  background-color: #fa073a;
   color: #fff;
   transform: translate(0px,-1px);
 }
@@ -166,8 +167,8 @@
     background-color: #f7f7f7;
 }
 .verifer-table-header {
-    background: radial-gradient( circle farthest-corner at -0.2% 80.7%, #594EE8 11%, #1A5ECB 118.2% );
-    color:white;
+
+    color:black;
 }
 
 .verifier-strike-removed {
@@ -179,3 +180,7 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+
+
+
+
