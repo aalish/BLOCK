@@ -90,8 +90,8 @@ class RenderAcceptedRequests extends Component {
                             : 
                             <span>
                                     {!req.review && <span>
-                                        <button style={{ textTransform: 'uppercase', fontWeight: 'bold' }} onClick={() => this.props.handleReject(req.request_id)} className="btn btn-danger float-right ml-2">reject</button>
-                                        <button style={{ textTransform: 'uppercase', fontWeight: 'bold' }} onClick={() => this.props.handleApprove(req.request_id)} className="btn btn-success float-right ml-2">approve</button> </span>
+                                        <button style={{ textTransform: 'uppercase', fontWeight: 'bold' }}  className="btn btn-danger float-right ml-2">Pending</button>
+                                        <button style={{ textTransform: 'uppercase', fontWeight: 'bold', visibility : "hidden"  }}  className="btn btn-success float-right ml-2">Pending</button> </span>
                                     }
                                     {req.review && <span>
                                         {(req.review && req.status) ? <button className="btn btn-success float-right ml-2">approved</button>
@@ -311,22 +311,7 @@ class Verifier extends Component {
                                 </tbody>
                             </table>
                         </div>
-                        <div className="history" style={{ marginTop: '15px', fontWeight:500 }}>
-                            <h2 style={{ marginBottom: '4vh' }}>Pending Requests</h2>
-                            <table className="table">
-                                <thead className="verifer-table-header">
-                                    <tr>
-                                        <th><h5>Account</h5></th>
-                                        <th><h5>Document</h5></th>
-                                        <th><h5>Arrived_at</h5></th>
-                                        <th />
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <RenderPendingRequests requests={this.state.pendingRequest} handleClickSend={this.handleClickSend} />
-                                </tbody>
-                            </table>
-                        </div>
+                        
                     </div>
                 </div>
  

@@ -5,6 +5,7 @@ import App from './App';
 import Dashboard from './components/Dashboard';
 import Issuer from './components/Issuer';
 import Verifier from './components/Verifier';
+import Customer from './components/Customer';
 
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -16,6 +17,7 @@ ReactDOM.render(
             <Route path="/dashboard" exact component={Dashboard} />
             <Route path="/issuer" exact component={Issuer} />
             <Route path="/verifier" exact component={Verifier} />
+            <Route path="/customer" exact component={Customer} />
         </div>
     </BrowserRouter>, document.getElementById('root'));
 
