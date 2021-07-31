@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './verifier.css'
+import './customer.css'
 import TimeAgo from 'react-timeago'
 import VerifierSSI from "../contracts/VerifierSSI.json";
 import getWeb3 from "../utils/getWeb3";
@@ -279,7 +279,7 @@ class Verifier extends Component {
                         <div className="main-header">
                             <div className="verifier">
                                 <div className="verifier_logo" />
-                                <div className="verifier-title"><h1 style={{ fontSize: '3rem' }}>USER</h1></div>
+                                <div className="verifier-title"><h1 style={{ fontSize: '3rem' , left: '50%' }}>GENERAL PUBLIC</h1></div>
                             </div>
                             
                         </div>
