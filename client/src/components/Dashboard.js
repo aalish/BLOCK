@@ -408,9 +408,9 @@ class Dashboard extends Component {
             }
         } catch (error) {
             // Catch any errors for any of the above operations.
-            alert(
-                `Failed to load web3, accounts, or contract. Check console for details.`,
-            );
+            // alert(
+            //     `Failed to load web3, accounts, or contract. Check console for details.`,
+            // );
             console.error(error);
         }
     }
