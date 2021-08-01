@@ -165,13 +165,13 @@ class App extends React.Component {
       <div className="App">
         {this.state.showTitleAndButtons && (
           <div>
-            <div className="homePageHeader">Self sovereign identity</div>
+            <div className="homePageHeader">OPEN LEDGER SYSTEM</div>
             <div className="btn-container">
               <div className="animated fadeIn login_btn">
                 <div className="main_btn" onClick={this.showLogin}>Log In</div>
               </div>
               <div className="animated fadeIn wallet_btn">
-                <div className="main_btn" onClick={this.handleCreateWallet}>Create Wallet</div>
+                <div className="main_btn" onClick={this.handleCreateWallet}>Wallet Signup</div>
               </div>
             </div>
           </div>

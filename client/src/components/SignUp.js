@@ -87,6 +87,8 @@ class SignUp extends Component {
           JSON.stringify(signatureObject),
           this.state.privateKey
         );
+        console.log("THIS IS CIPHER TEXT")
+        console.log(ciphertext)
         this.setState({signature:true, signatureValue: ciphertext.toString() })
         this.setState({
           success: true,
