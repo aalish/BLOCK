@@ -271,7 +271,7 @@ class Verifier extends Component {
                 <div className="verifier-entire">
                     <div className="dash-nav">
                         <div>
-                            <h1 className="dash-title">Self Sovereign Identity</h1>
+                            <h1 className="dash-title">OPEN LEDGER SYSTEM</h1>
                         </div>
                         <div>
                             <button onClick={this.handleLogout} className="verifer-logout-btn">Logout</button>
