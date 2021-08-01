@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import SignUp from './components/SignUp';
+import VerifierLogin from './components/VerifierLogin';
+
 import {Redirect} from 'react-router-dom'
 import CryptoJS from "crypto-js";
 
@@ -12,7 +14,10 @@ class App extends React.Component {
   state = {
     showBackground: false,
     showLogin: false,
+    handleVerifier: false,
+    showVerifierLogin:false,
     showCreateWallet: false,
+    showVerifyLogin: false,
     showVerify: false,
     showTitleAndButtons: true,
     signature: "",
@@ -33,6 +38,9 @@ class App extends React.Component {
   }
   showLogin = () => {
     this.setState({ showTitleAndButtons:false, showBackground: true, showLogin: true });
+  };
+  handleVerifier = () => {
+    this.setState({ showTitleAndButtons:false, showBackground: true, showVerifierLogin: true });
   };
   handleCreateWallet = () => {
     this.setState({
@@ -58,9 +66,24 @@ class App extends React.Component {
       showCreateWallet: false
     });
   };
+  handleVerifyCreateCut = () => {
+    this.setState({
+      showBackground: false,
+      showVerifierLogin: false,
+      showTitleAndButtons: true
+    });
+  };
+  handleVerifyLogin = () => {
+    this.setState({
+      showBackground: false,
+      showVerify: true,
+      showVerifierLogin: false
+    });
+  };
   handleLoginChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
+
 
   handleFile = (e) => {
     let fileName = e.target.files[0].name;
@@ -174,6 +197,9 @@ class App extends React.Component {
                 <div className="main_btn" onClick={this.handleCreateWallet}>Wallet Signup</div>
               </div>
             </div>
+            <div class = "navbar">
+            <div className="main_btn" onClick={this.handleVerifier}>Verifier Log In</div>
+            </div>
           </div>
         )}
 
@@ -268,6 +294,12 @@ class App extends React.Component {
             <SignUp
               handleCreateCut={this.handleCreateCut}
               handleVerify={this.handleVerify}
+            />
+          )}
+           {this.state.showVerifierLogin && (
+            <VerifierLogin
+              handleCreateCut={this.handleVerifyCreateCut}
+              handleVerify={this.handleVerifyLogin}
             />
           )}
           {this.state.showBackground && <div className="background" />}

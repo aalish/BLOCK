@@ -151,6 +151,13 @@ class Verifier extends Component {
     handleKeyChange = (e) => {
         this.setState({user_did:e.target.value});
     }
+    handleLogout = () => {
+        console.log('cookies')
+        console.log(document.cookie)
+        document.cookie = `did = ; expires= ${new Date()}`;
+        console.log(document.cookie)
+        window.location.href = "http://localhost:3000/";
+      }
     handleDocChange = (e) => {
         this.setState({ listOfDoc:e.target.value});
     }
@@ -265,6 +272,20 @@ class Verifier extends Component {
         return <EvaluateIpfs addressObj={this.state.acceptedIpfsAddress} privateKey={this.state.privateKey}/>
     }
     render() {
+        let cookie = document.cookie;
+        let cookieArr = cookie.split('; ');
+        let value = [];
+        cookieArr.forEach(arr => {
+            let content = arr.split('=');
+            value[content[0]] = content[1];
+            console.log(value)
+            
+        });
+        if(!value['v_did']){
+            console.log(value)
+            console.log('tets')
+            window.location.href = "http://localhost:3000/";
+        }
 
         return (
             <div>

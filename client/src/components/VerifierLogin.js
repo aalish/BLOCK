@@ -14,8 +14,8 @@ const arrayBufferToHex = require("array-buffer-to-hex");
 class VerifierLogin extends Component {
     state = {
         name:'',
-        email:'',
-        // phone:'',
+        v_email:'government123',
+         v_phone:'12345',
         // address:'',
         // privateKey:null,
         // publicKey:null,
@@ -30,7 +30,7 @@ class VerifierLogin extends Component {
         // signature:false,
         // signatureValue:null,
         route:false,
-        did:"",
+        v_did:"6G237080B7F911E9BCCD03A2106A727R",
     }
 
     handleChange = (e) => {
@@ -49,7 +49,7 @@ class VerifierLogin extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
       const profile_uuid = uuid().replace(/-/g, "").toUpperCase();
-      this.setState({did:'6G237080B7F911E9BCCD03A2106A727R'});
+      this.setState({v_did:'6G237080B7F911E9BCCD03A2106A727R'});
       // if (
       //   this.state.name &&
       //   this.state.phone &&
@@ -58,12 +58,12 @@ class VerifierLogin extends Component {
       //   this.state.signature
       // ) {
        
-        if(this.state.name==="sandip" && this.state.phone==="thapa"){
+        if(this.state.v_email==="government123" && this.state.v_phone==="12345"){
         
           
-          document.cookie = `name = ${this.state.name}`;
-          document.cookie = `phone = ${this.state.phone}`;
-          document.cookie = `did = ${this.state.did}`;
+          document.cookie = `email = ${this.state.v_email}`;
+          document.cookie = `phone = ${this.state.v_phone}`;
+          document.cookie = `v_did = ${this.state.v_did}`;
           // document.cookie = `address = ${this.state.address}`;
           // document.cookie = `did = ${profile_uuid}`;
           // document.cookie = `privateKey = ${this.state.privateKey}`;
@@ -233,7 +233,7 @@ class VerifierLogin extends Component {
                   </label>
                   <input
                     type="text"
-                    name="name"
+                    name="v_email"
                     className="signup_input form-control"
                     onChange={this.handleChange}
                     placeholder="email"
@@ -247,7 +247,7 @@ class VerifierLogin extends Component {
                   <label htmlFor="create-account-password">password:</label>
                   <input
                     type="password"
-                    name="phone"
+                    name="v_phone"
                     className="signup_input form-control"
                     onChange={this.handleChange}
                     placeholder="password"
