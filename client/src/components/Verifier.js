@@ -137,7 +137,7 @@ class Verifier extends Component {
         accounts: null,
         VerifierSSI_contract: null,
         refresh: false,
-        company:'Pay Nepal',
+        company:'Government of Nepal',
         did:'6G237080B7F911E9BCCD03A2106A727R',
         user_did:null,
         listOfDoc:null,
