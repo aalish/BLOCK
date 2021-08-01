@@ -5,7 +5,7 @@ import App from './App';
 import Dashboard from './components/Dashboard';
 import Issuer from './components/Issuer';
 import Verifier from './components/Verifier';
-import Customer from './components/Public';
+import Customer from './components/Customer';
 
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route } from 'react-router-dom';
