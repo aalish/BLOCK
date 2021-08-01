@@ -17,7 +17,7 @@ ReactDOM.render(
             <Route path="/dashboard" exact component={Dashboard} />
             <Route path="/issuer" exact component={Issuer} />
             <Route path="/verifier" exact component={Verifier} />
-            <Route path="/customer" exact component={Customer} />
+            <Route path="/public" exact component={Customer} />
         </div>
     </BrowserRouter>, document.getElementById('root'));
 
