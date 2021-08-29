@@ -6,7 +6,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url('apps.jpg');
+  background-image: url('app_background.jpg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,7 @@ html {
     font-family: 'open-sans' sans-serif;
     font-weight: 700;
     position: absolute;
-    left: 12vw;
+    left: 25vw;
     top: 17vh;
     color: #fff;
     font-family:sans-serif;
@@ -76,7 +76,6 @@ html {
     border-radius: 50px;
     display: inline-block;
     border: none;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
     }
 .main_btn:hover {
@@ -274,7 +273,7 @@ label {/****general styles for label******/
   border-radius: .2rem;
   text-transform: uppercase;
   font-size: 1rem;
-  background:radial-gradient( circle farthest-corner at -0.2% 99.7%,  rgb(136, 83, 118) 0%, #8aa6c4 165.2% );
+  background:radial-gradient( circle farthest-corner at -0.2% 99.7%,  rgba(190,53,145,1) 0%, #1D5590 165.2% );
   outline: none;
   font-weight: bold;
   color: #fff;
@@ -406,7 +405,7 @@ label {/****general styles for label******/
   padding: .8rem;
   background-color: #1a53ff;
   color: #fff;
-  /* width: ; */
+  width: ;
 }
 .verify-tab-form {
   display: flex;
@@ -513,7 +512,7 @@ small {
 }
 
 .app-upload-btn:hover {
-  background: radial-gradient( circle farthest-corner at -0.2% 99.7%,  rgb(136, 83, 118) 0%, #8aa6c4 165.2% );
+  background: radial-gradient( circle farthest-corner at -0.2% 99.7%,  rgba(190,53,145,1) 0%, #1D5590 165.2% );
   color: white;
   border: 1px solid white;
 }
@@ -569,8 +568,6 @@ small {
 
 
 /*
-
-
 #00cc66
 #00e639
 #00cc33*/
@@ -601,12 +598,3 @@ small {
       width: 25vw;
   }
 }
-.navbar{
-  width: 98%;
-  height: 15%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
